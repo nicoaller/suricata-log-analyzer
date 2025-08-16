@@ -1,0 +1,1623 @@
+<?xml version="1.0" ?>
+<suricata>
+	<summary>
+		<types>
+			<dhcp>3</dhcp>
+			<dns>488</dns>
+			<krb5>70</krb5>
+			<dcerpc>258</dcerpc>
+			<smb>294</smb>
+			<http>35</http>
+			<fileinfo>33</fileinfo>
+			<tls>161</tls>
+			<flow>826</flow>
+			<alert>121</alert>
+			<anomaly>25</anomaly>
+			<smtp>10</smtp>
+			<stats>1</stats>
+		</types>
+		<alerts>
+			<alert signature_id="2028765" signature="ET JA3 Hash - [Abuse.ch] Possible Dridex" category="Unknown Traffic" severity="3">
+				<count>74</count>
+				<src_ips>
+					<ip type="private">172.16.0.170</ip>
+					<ip type="private">172.16.0.149</ip>
+				</src_ips>
+				<src_ports>
+					<port type="privileged">540</port>
+					<port type="privileged">498</port>
+					<port type="privileged">497</port>
+					<port type="privileged">541</port>
+				</src_ports>
+				<dest_ips>
+					<ip type="public">54.38.242.185</ip>
+					<ip type="public">54.37.106.167</ip>
+					<ip type="public">180.250.21.2</ip>
+					<ip type="public">61.7.231.226</ip>
+					<ip type="public">135.148.121.246</ip>
+					<ip type="public">61.7.231.229</ip>
+					<ip type="public">168.197.250.14</ip>
+					<ip type="public">59.148.253.194</ip>
+					<ip type="public">128.199.93.156</ip>
+					<ip type="public">128.199.192.135</ip>
+					<ip type="public">198.199.98.78</ip>
+					<ip type="public">27.254.174.84</ip>
+					<ip type="public">162.144.76.184</ip>
+					<ip type="public">144.217.88.125</ip>
+					<ip type="public">139.196.72.155</ip>
+					<ip type="public">134.209.156.68</ip>
+					<ip type="public">185.184.25.78</ip>
+				</dest_ips>
+				<dest_ports>
+					<port type="privileged">497</port>
+					<port type="privileged">80</port>
+					<port type="privileged">808</port>
+					<port type="privileged">443</port>
+				</dest_ports>
+			</alert>
+			<alert signature_id="2018959" signature="ET POLICY PE EXE or DLL Windows file download HTTP" category="Potential Corporate Privacy Violation" severity="1">
+				<count>1</count>
+				<src_ips>
+					<ip type="public">64.34.171.228</ip>
+				</src_ips>
+				<src_ports>
+					<port type="privileged">80</port>
+				</src_ports>
+				<dest_ips>
+					<ip type="private">172.16.0.149</ip>
+				</dest_ips>
+				<dest_ports>
+					<port type="privileged">80</port>
+				</dest_ports>
+			</alert>
+			<alert signature_id="2014520" signature="ET INFO EXE - Served Attached HTTP" category="Misc activity" severity="3">
+				<count>1</count>
+				<src_ips>
+					<ip type="public">64.34.171.228</ip>
+				</src_ips>
+				<src_ports>
+					<port type="privileged">80</port>
+				</src_ports>
+				<dest_ips>
+					<ip type="private">172.16.0.149</ip>
+				</dest_ips>
+				<dest_ports>
+					<port type="privileged">80</port>
+				</dest_ports>
+			</alert>
+			<alert signature_id="2031412" signature="ET MALWARE FormBook CnC Checkin (GET)" category="Malware Command and Control Activity Detected" severity="1">
+				<count>29</count>
+				<src_ips>
+					<ip type="private">172.16.0.131</ip>
+				</src_ips>
+				<src_ports>
+					<port type="privileged">492</port>
+				</src_ports>
+				<dest_ips>
+					<ip type="public">184.168.99.26</ip>
+					<ip type="public">66.29.145.216</ip>
+					<ip type="public">216.172.184.77</ip>
+					<ip type="public">23.227.38.74</ip>
+					<ip type="public">198.54.117.210</ip>
+					<ip type="public">154.206.65.249</ip>
+					<ip type="public">104.21.89.147</ip>
+					<ip type="public">198.185.159.144</ip>
+					<ip type="public">120.55.51.124</ip>
+					<ip type="public">209.17.116.163</ip>
+					<ip type="public">198.54.117.215</ip>
+					<ip type="public">216.58.193.147</ip>
+					<ip type="public">66.235.200.112</ip>
+					<ip type="public">104.16.12.194</ip>
+					<ip type="public">194.9.94.85</ip>
+					<ip type="public">213.186.33.5</ip>
+					<ip type="public">3.130.253.23</ip>
+					<ip type="public">173.231.37.114</ip>
+					<ip type="public">72.167.191.69</ip>
+				</dest_ips>
+				<dest_ports>
+					<port type="privileged">80</port>
+					<port type="privileged">492</port>
+				</dest_ports>
+			</alert>
+			<alert signature_id="2260002" signature="SURICATA Applayer Detect protocol only one direction" category="Generic Protocol Command Decode" severity="3">
+				<count>15</count>
+				<src_ips>
+					<ip type="public">74.208.5.15</ip>
+					<ip type="public">142.250.138.109</ip>
+					<ip type="public">192.185.4.31</ip>
+					<ip type="public">210.131.2.36</ip>
+					<ip type="public">116.254.112.253</ip>
+					<ip type="public">122.17.147.238</ip>
+					<ip type="public">27.34.147.95</ip>
+					<ip type="public">40.97.120.162</ip>
+					<ip type="public">94.177.209.30</ip>
+					<ip type="private">172.16.0.149</ip>
+				</src_ips>
+				<src_ports>
+					<port type="privileged">25</port>
+					<port type="privileged">497</port>
+					<port type="privileged">587</port>
+				</src_ports>
+				<dest_ips>
+					<ip type="private">172.16.0.149</ip>
+					<ip type="private">172.16.0.52</ip>
+				</dest_ips>
+				<dest_ports>
+					<port type="privileged">498</port>
+					<port type="privileged">497</port>
+					<port type="privileged">139</port>
+				</dest_ports>
+			</alert>
+			<alert signature_id="2013659" signature="ET POLICY Self Signed SSL Certificate (SomeOrganizationalUnit)" category="Potential Corporate Privacy Violation" severity="1">
+				<count>1</count>
+				<src_ips>
+					<ip type="public">54.38.242.185</ip>
+				</src_ips>
+				<src_ports>
+					<port type="privileged">443</port>
+				</src_ports>
+				<dest_ips>
+					<ip type="private">172.16.0.170</ip>
+				</dest_ips>
+				<dest_ports>
+					<port type="privileged">443</port>
+				</dest_ports>
+			</alert>
+		</alerts>
+	</summary>
+	<events>
+		<event>
+			<timestamp>23/2/2022 - 19:24:44 UTC+0100</timestamp>
+			<event_type>alert</event_type>
+			<src_ip>172.16.0.149</src_ip>
+			<src_port>497</src_port>
+			<dest_ip>135.148.121.246</dest_ip>
+			<dest_port>808</dest_port>
+			<signature_id>2028765</signature_id>
+			<signature>ET JA3 Hash - [Abuse.ch] Possible Dridex</signature>
+			<category>Unknown Traffic</category>
+			<severity>3</severity>
+		</event>
+		<event>
+			<timestamp>23/2/2022 - 19:24:34 UTC+0100</timestamp>
+			<event_type>alert</event_type>
+			<src_ip>64.34.171.228</src_ip>
+			<src_port>80</src_port>
+			<dest_ip>172.16.0.149</dest_ip>
+			<dest_port>497</dest_port>
+			<signature_id>2018959</signature_id>
+			<signature>ET POLICY PE EXE or DLL Windows file download HTTP</signature>
+			<category>Potential Corporate Privacy Violation</category>
+			<severity>1</severity>
+		</event>
+		<event>
+			<timestamp>23/2/2022 - 19:24:34 UTC+0100</timestamp>
+			<event_type>alert</event_type>
+			<src_ip>64.34.171.228</src_ip>
+			<src_port>80</src_port>
+			<dest_ip>172.16.0.149</dest_ip>
+			<dest_port>497</dest_port>
+			<signature_id>2014520</signature_id>
+			<signature>ET INFO EXE - Served Attached HTTP</signature>
+			<category>Misc activity</category>
+			<severity>3</severity>
+		</event>
+		<event>
+			<timestamp>23/2/2022 - 19:24:46 UTC+0100</timestamp>
+			<event_type>alert</event_type>
+			<src_ip>172.16.0.149</src_ip>
+			<src_port>497</src_port>
+			<dest_ip>135.148.121.246</dest_ip>
+			<dest_port>808</dest_port>
+			<signature_id>2028765</signature_id>
+			<signature>ET JA3 Hash - [Abuse.ch] Possible Dridex</signature>
+			<category>Unknown Traffic</category>
+			<severity>3</severity>
+		</event>
+		<event>
+			<timestamp>23/2/2022 - 19:24:49 UTC+0100</timestamp>
+			<event_type>alert</event_type>
+			<src_ip>172.16.0.149</src_ip>
+			<src_port>497</src_port>
+			<dest_ip>144.217.88.125</dest_ip>
+			<dest_port>443</dest_port>
+			<signature_id>2028765</signature_id>
+			<signature>ET JA3 Hash - [Abuse.ch] Possible Dridex</signature>
+			<category>Unknown Traffic</category>
+			<severity>3</severity>
+		</event>
+		<event>
+			<timestamp>23/2/2022 - 19:25:36 UTC+0100</timestamp>
+			<event_type>alert</event_type>
+			<src_ip>172.16.0.149</src_ip>
+			<src_port>497</src_port>
+			<dest_ip>135.148.121.246</dest_ip>
+			<dest_port>808</dest_port>
+			<signature_id>2028765</signature_id>
+			<signature>ET JA3 Hash - [Abuse.ch] Possible Dridex</signature>
+			<category>Unknown Traffic</category>
+			<severity>3</severity>
+		</event>
+		<event>
+			<timestamp>23/2/2022 - 19:25:53 UTC+0100</timestamp>
+			<event_type>alert</event_type>
+			<src_ip>172.16.0.170</src_ip>
+			<src_port>540</src_port>
+			<dest_ip>27.254.174.84</dest_ip>
+			<dest_port>808</dest_port>
+			<signature_id>2028765</signature_id>
+			<signature>ET JA3 Hash - [Abuse.ch] Possible Dridex</signature>
+			<category>Unknown Traffic</category>
+			<severity>3</severity>
+		</event>
+		<event>
+			<timestamp>23/2/2022 - 19:26:0 UTC+0100</timestamp>
+			<event_type>alert</event_type>
+			<src_ip>172.16.0.170</src_ip>
+			<src_port>540</src_port>
+			<dest_ip>27.254.174.84</dest_ip>
+			<dest_port>808</dest_port>
+			<signature_id>2028765</signature_id>
+			<signature>ET JA3 Hash - [Abuse.ch] Possible Dridex</signature>
+			<category>Unknown Traffic</category>
+			<severity>3</severity>
+		</event>
+		<event>
+			<timestamp>23/2/2022 - 19:27:50 UTC+0100</timestamp>
+			<event_type>alert</event_type>
+			<src_ip>172.16.0.170</src_ip>
+			<src_port>540</src_port>
+			<dest_ip>27.254.174.84</dest_ip>
+			<dest_port>808</dest_port>
+			<signature_id>2028765</signature_id>
+			<signature>ET JA3 Hash - [Abuse.ch] Possible Dridex</signature>
+			<category>Unknown Traffic</category>
+			<severity>3</severity>
+		</event>
+		<event>
+			<timestamp>23/2/2022 - 19:26:54 UTC+0100</timestamp>
+			<event_type>alert</event_type>
+			<src_ip>172.16.0.170</src_ip>
+			<src_port>540</src_port>
+			<dest_ip>27.254.174.84</dest_ip>
+			<dest_port>808</dest_port>
+			<signature_id>2028765</signature_id>
+			<signature>ET JA3 Hash - [Abuse.ch] Possible Dridex</signature>
+			<category>Unknown Traffic</category>
+			<severity>3</severity>
+		</event>
+		<event>
+			<timestamp>23/2/2022 - 19:27:59 UTC+0100</timestamp>
+			<event_type>alert</event_type>
+			<src_ip>172.16.0.149</src_ip>
+			<src_port>497</src_port>
+			<dest_ip>135.148.121.246</dest_ip>
+			<dest_port>808</dest_port>
+			<signature_id>2028765</signature_id>
+			<signature>ET JA3 Hash - [Abuse.ch] Possible Dridex</signature>
+			<category>Unknown Traffic</category>
+			<severity>3</severity>
+		</event>
+		<event>
+			<timestamp>23/2/2022 - 19:28:54 UTC+0100</timestamp>
+			<event_type>alert</event_type>
+			<src_ip>172.16.0.149</src_ip>
+			<src_port>497</src_port>
+			<dest_ip>135.148.121.246</dest_ip>
+			<dest_port>808</dest_port>
+			<signature_id>2028765</signature_id>
+			<signature>ET JA3 Hash - [Abuse.ch] Possible Dridex</signature>
+			<category>Unknown Traffic</category>
+			<severity>3</severity>
+		</event>
+		<event>
+			<timestamp>23/2/2022 - 19:28:31 UTC+0100</timestamp>
+			<event_type>alert</event_type>
+			<src_ip>172.16.0.170</src_ip>
+			<src_port>540</src_port>
+			<dest_ip>61.7.231.229</dest_ip>
+			<dest_port>443</dest_port>
+			<signature_id>2028765</signature_id>
+			<signature>ET JA3 Hash - [Abuse.ch] Possible Dridex</signature>
+			<category>Unknown Traffic</category>
+			<severity>3</severity>
+		</event>
+		<event>
+			<timestamp>23/2/2022 - 19:26:2 UTC+0100</timestamp>
+			<event_type>alert</event_type>
+			<src_ip>172.16.0.170</src_ip>
+			<src_port>540</src_port>
+			<dest_ip>180.250.21.2</dest_ip>
+			<dest_port>443</dest_port>
+			<signature_id>2028765</signature_id>
+			<signature>ET JA3 Hash - [Abuse.ch] Possible Dridex</signature>
+			<category>Unknown Traffic</category>
+			<severity>3</severity>
+		</event>
+		<event>
+			<timestamp>23/2/2022 - 19:26:24 UTC+0100</timestamp>
+			<event_type>alert</event_type>
+			<src_ip>172.16.0.149</src_ip>
+			<src_port>497</src_port>
+			<dest_ip>135.148.121.246</dest_ip>
+			<dest_port>808</dest_port>
+			<signature_id>2028765</signature_id>
+			<signature>ET JA3 Hash - [Abuse.ch] Possible Dridex</signature>
+			<category>Unknown Traffic</category>
+			<severity>3</severity>
+		</event>
+		<event>
+			<timestamp>23/2/2022 - 19:26:24 UTC+0100</timestamp>
+			<event_type>alert</event_type>
+			<src_ip>172.16.0.149</src_ip>
+			<src_port>497</src_port>
+			<dest_ip>144.217.88.125</dest_ip>
+			<dest_port>443</dest_port>
+			<signature_id>2028765</signature_id>
+			<signature>ET JA3 Hash - [Abuse.ch] Possible Dridex</signature>
+			<category>Unknown Traffic</category>
+			<severity>3</severity>
+		</event>
+		<event>
+			<timestamp>23/2/2022 - 19:28:57 UTC+0100</timestamp>
+			<event_type>alert</event_type>
+			<src_ip>172.16.0.149</src_ip>
+			<src_port>497</src_port>
+			<dest_ip>135.148.121.246</dest_ip>
+			<dest_port>808</dest_port>
+			<signature_id>2028765</signature_id>
+			<signature>ET JA3 Hash - [Abuse.ch] Possible Dridex</signature>
+			<category>Unknown Traffic</category>
+			<severity>3</severity>
+		</event>
+		<event>
+			<timestamp>23/2/2022 - 19:28:59 UTC+0100</timestamp>
+			<event_type>alert</event_type>
+			<src_ip>172.16.0.149</src_ip>
+			<src_port>497</src_port>
+			<dest_ip>144.217.88.125</dest_ip>
+			<dest_port>443</dest_port>
+			<signature_id>2028765</signature_id>
+			<signature>ET JA3 Hash - [Abuse.ch] Possible Dridex</signature>
+			<category>Unknown Traffic</category>
+			<severity>3</severity>
+		</event>
+		<event>
+			<timestamp>23/2/2022 - 19:29:44 UTC+0100</timestamp>
+			<event_type>alert</event_type>
+			<src_ip>172.16.0.149</src_ip>
+			<src_port>497</src_port>
+			<dest_ip>135.148.121.246</dest_ip>
+			<dest_port>808</dest_port>
+			<signature_id>2028765</signature_id>
+			<signature>ET JA3 Hash - [Abuse.ch] Possible Dridex</signature>
+			<category>Unknown Traffic</category>
+			<severity>3</severity>
+		</event>
+		<event>
+			<timestamp>23/2/2022 - 19:30:16 UTC+0100</timestamp>
+			<event_type>alert</event_type>
+			<src_ip>172.16.0.149</src_ip>
+			<src_port>497</src_port>
+			<dest_ip>135.148.121.246</dest_ip>
+			<dest_port>808</dest_port>
+			<signature_id>2028765</signature_id>
+			<signature>ET JA3 Hash - [Abuse.ch] Possible Dridex</signature>
+			<category>Unknown Traffic</category>
+			<severity>3</severity>
+		</event>
+		<event>
+			<timestamp>23/2/2022 - 19:30:12 UTC+0100</timestamp>
+			<event_type>alert</event_type>
+			<src_ip>172.16.0.170</src_ip>
+			<src_port>540</src_port>
+			<dest_ip>168.197.250.14</dest_ip>
+			<dest_port>80</dest_port>
+			<signature_id>2028765</signature_id>
+			<signature>ET JA3 Hash - [Abuse.ch] Possible Dridex</signature>
+			<category>Unknown Traffic</category>
+			<severity>3</severity>
+		</event>
+		<event>
+			<timestamp>23/2/2022 - 19:26:22 UTC+0100</timestamp>
+			<event_type>alert</event_type>
+			<src_ip>172.16.0.149</src_ip>
+			<src_port>497</src_port>
+			<dest_ip>135.148.121.246</dest_ip>
+			<dest_port>808</dest_port>
+			<signature_id>2028765</signature_id>
+			<signature>ET JA3 Hash - [Abuse.ch] Possible Dridex</signature>
+			<category>Unknown Traffic</category>
+			<severity>3</severity>
+		</event>
+		<event>
+			<timestamp>23/2/2022 - 19:30:38 UTC+0100</timestamp>
+			<event_type>alert</event_type>
+			<src_ip>172.16.0.131</src_ip>
+			<src_port>492</src_port>
+			<dest_ip>23.227.38.74</dest_ip>
+			<dest_port>80</dest_port>
+			<signature_id>2031412</signature_id>
+			<signature>ET MALWARE FormBook CnC Checkin (GET)</signature>
+			<category>Malware Command and Control Activity Detected</category>
+			<severity>1</severity>
+		</event>
+		<event>
+			<timestamp>23/2/2022 - 19:30:49 UTC+0100</timestamp>
+			<event_type>alert</event_type>
+			<src_ip>172.16.0.131</src_ip>
+			<src_port>492</src_port>
+			<dest_ip>194.9.94.85</dest_ip>
+			<dest_port>80</dest_port>
+			<signature_id>2031412</signature_id>
+			<signature>ET MALWARE FormBook CnC Checkin (GET)</signature>
+			<category>Malware Command and Control Activity Detected</category>
+			<severity>1</severity>
+		</event>
+		<event>
+			<timestamp>23/2/2022 - 19:30:17 UTC+0100</timestamp>
+			<event_type>alert</event_type>
+			<src_ip>172.16.0.149</src_ip>
+			<src_port>497</src_port>
+			<dest_ip>135.148.121.246</dest_ip>
+			<dest_port>808</dest_port>
+			<signature_id>2028765</signature_id>
+			<signature>ET JA3 Hash - [Abuse.ch] Possible Dridex</signature>
+			<category>Unknown Traffic</category>
+			<severity>3</severity>
+		</event>
+		<event>
+			<timestamp>23/2/2022 - 19:31:17 UTC+0100</timestamp>
+			<event_type>alert</event_type>
+			<src_ip>172.16.0.149</src_ip>
+			<src_port>497</src_port>
+			<dest_ip>135.148.121.246</dest_ip>
+			<dest_port>808</dest_port>
+			<signature_id>2028765</signature_id>
+			<signature>ET JA3 Hash - [Abuse.ch] Possible Dridex</signature>
+			<category>Unknown Traffic</category>
+			<severity>3</severity>
+		</event>
+		<event>
+			<timestamp>23/2/2022 - 19:31:19 UTC+0100</timestamp>
+			<event_type>alert</event_type>
+			<src_ip>172.16.0.170</src_ip>
+			<src_port>540</src_port>
+			<dest_ip>180.250.21.2</dest_ip>
+			<dest_port>443</dest_port>
+			<signature_id>2028765</signature_id>
+			<signature>ET JA3 Hash - [Abuse.ch] Possible Dridex</signature>
+			<category>Unknown Traffic</category>
+			<severity>3</severity>
+		</event>
+		<event>
+			<timestamp>23/2/2022 - 19:31:18 UTC+0100</timestamp>
+			<event_type>alert</event_type>
+			<src_ip>172.16.0.170</src_ip>
+			<src_port>540</src_port>
+			<dest_ip>168.197.250.14</dest_ip>
+			<dest_port>80</dest_port>
+			<signature_id>2028765</signature_id>
+			<signature>ET JA3 Hash - [Abuse.ch] Possible Dridex</signature>
+			<category>Unknown Traffic</category>
+			<severity>3</severity>
+		</event>
+		<event>
+			<timestamp>23/2/2022 - 19:27:12 UTC+0100</timestamp>
+			<event_type>alert</event_type>
+			<src_ip>172.16.0.149</src_ip>
+			<src_port>497</src_port>
+			<dest_ip>135.148.121.246</dest_ip>
+			<dest_port>808</dest_port>
+			<signature_id>2028765</signature_id>
+			<signature>ET JA3 Hash - [Abuse.ch] Possible Dridex</signature>
+			<category>Unknown Traffic</category>
+			<severity>3</severity>
+		</event>
+		<event>
+			<timestamp>23/2/2022 - 19:27:57 UTC+0100</timestamp>
+			<event_type>alert</event_type>
+			<src_ip>172.16.0.149</src_ip>
+			<src_port>497</src_port>
+			<dest_ip>135.148.121.246</dest_ip>
+			<dest_port>808</dest_port>
+			<signature_id>2028765</signature_id>
+			<signature>ET JA3 Hash - [Abuse.ch] Possible Dridex</signature>
+			<category>Unknown Traffic</category>
+			<severity>3</severity>
+		</event>
+		<event>
+			<timestamp>23/2/2022 - 19:31:28 UTC+0100</timestamp>
+			<event_type>alert</event_type>
+			<src_ip>172.16.0.131</src_ip>
+			<src_port>492</src_port>
+			<dest_ip>23.227.38.74</dest_ip>
+			<dest_port>80</dest_port>
+			<signature_id>2031412</signature_id>
+			<signature>ET MALWARE FormBook CnC Checkin (GET)</signature>
+			<category>Malware Command and Control Activity Detected</category>
+			<severity>1</severity>
+		</event>
+		<event>
+			<timestamp>23/2/2022 - 19:32:45 UTC+0100</timestamp>
+			<event_type>alert</event_type>
+			<src_ip>172.16.0.131</src_ip>
+			<src_port>492</src_port>
+			<dest_ip>198.185.159.144</dest_ip>
+			<dest_port>80</dest_port>
+			<signature_id>2031412</signature_id>
+			<signature>ET MALWARE FormBook CnC Checkin (GET)</signature>
+			<category>Malware Command and Control Activity Detected</category>
+			<severity>1</severity>
+		</event>
+		<event>
+			<timestamp>23/2/2022 - 19:32:57 UTC+0100</timestamp>
+			<event_type>alert</event_type>
+			<src_ip>172.16.0.149</src_ip>
+			<src_port>497</src_port>
+			<dest_ip>135.148.121.246</dest_ip>
+			<dest_port>808</dest_port>
+			<signature_id>2028765</signature_id>
+			<signature>ET JA3 Hash - [Abuse.ch] Possible Dridex</signature>
+			<category>Unknown Traffic</category>
+			<severity>3</severity>
+		</event>
+		<event>
+			<timestamp>23/2/2022 - 19:31:21 UTC+0100</timestamp>
+			<event_type>alert</event_type>
+			<src_ip>172.16.0.149</src_ip>
+			<src_port>497</src_port>
+			<dest_ip>144.217.88.125</dest_ip>
+			<dest_port>443</dest_port>
+			<signature_id>2028765</signature_id>
+			<signature>ET JA3 Hash - [Abuse.ch] Possible Dridex</signature>
+			<category>Unknown Traffic</category>
+			<severity>3</severity>
+		</event>
+		<event>
+			<timestamp>23/2/2022 - 19:31:1 UTC+0100</timestamp>
+			<event_type>alert</event_type>
+			<src_ip>172.16.0.131</src_ip>
+			<src_port>492</src_port>
+			<dest_ip>120.55.51.124</dest_ip>
+			<dest_port>80</dest_port>
+			<signature_id>2031412</signature_id>
+			<signature>ET MALWARE FormBook CnC Checkin (GET)</signature>
+			<category>Malware Command and Control Activity Detected</category>
+			<severity>1</severity>
+		</event>
+		<event>
+			<timestamp>23/2/2022 - 19:33:33 UTC+0100</timestamp>
+			<event_type>alert</event_type>
+			<src_ip>172.16.0.170</src_ip>
+			<src_port>541</src_port>
+			<dest_ip>168.197.250.14</dest_ip>
+			<dest_port>80</dest_port>
+			<signature_id>2028765</signature_id>
+			<signature>ET JA3 Hash - [Abuse.ch] Possible Dridex</signature>
+			<category>Unknown Traffic</category>
+			<severity>3</severity>
+		</event>
+		<event>
+			<timestamp>23/2/2022 - 19:31:6 UTC+0100</timestamp>
+			<event_type>alert</event_type>
+			<src_ip>172.16.0.170</src_ip>
+			<src_port>540</src_port>
+			<dest_ip>168.197.250.14</dest_ip>
+			<dest_port>80</dest_port>
+			<signature_id>2028765</signature_id>
+			<signature>ET JA3 Hash - [Abuse.ch] Possible Dridex</signature>
+			<category>Unknown Traffic</category>
+			<severity>3</severity>
+		</event>
+		<event>
+			<timestamp>23/2/2022 - 19:33:35 UTC+0100</timestamp>
+			<event_type>alert</event_type>
+			<src_ip>172.16.0.131</src_ip>
+			<src_port>492</src_port>
+			<dest_ip>173.231.37.114</dest_ip>
+			<dest_port>80</dest_port>
+			<signature_id>2031412</signature_id>
+			<signature>ET MALWARE FormBook CnC Checkin (GET)</signature>
+			<category>Malware Command and Control Activity Detected</category>
+			<severity>1</severity>
+		</event>
+		<event>
+			<timestamp>23/2/2022 - 19:29:9 UTC+0100</timestamp>
+			<event_type>alert</event_type>
+			<src_ip>172.16.0.170</src_ip>
+			<src_port>540</src_port>
+			<dest_ip>168.197.250.14</dest_ip>
+			<dest_port>80</dest_port>
+			<signature_id>2028765</signature_id>
+			<signature>ET JA3 Hash - [Abuse.ch] Possible Dridex</signature>
+			<category>Unknown Traffic</category>
+			<severity>3</severity>
+		</event>
+		<event>
+			<timestamp>23/2/2022 - 19:31:12 UTC+0100</timestamp>
+			<event_type>alert</event_type>
+			<src_ip>172.16.0.131</src_ip>
+			<src_port>492</src_port>
+			<dest_ip>198.185.159.144</dest_ip>
+			<dest_port>80</dest_port>
+			<signature_id>2031412</signature_id>
+			<signature>ET MALWARE FormBook CnC Checkin (GET)</signature>
+			<category>Malware Command and Control Activity Detected</category>
+			<severity>1</severity>
+		</event>
+		<event>
+			<timestamp>23/2/2022 - 19:36:59 UTC+0100</timestamp>
+			<event_type>alert</event_type>
+			<src_ip>172.16.0.170</src_ip>
+			<src_port>541</src_port>
+			<dest_ip>180.250.21.2</dest_ip>
+			<dest_port>443</dest_port>
+			<signature_id>2028765</signature_id>
+			<signature>ET JA3 Hash - [Abuse.ch] Possible Dridex</signature>
+			<category>Unknown Traffic</category>
+			<severity>3</severity>
+		</event>
+		<event>
+			<timestamp>23/2/2022 - 19:32:10 UTC+0100</timestamp>
+			<event_type>alert</event_type>
+			<src_ip>172.16.0.149</src_ip>
+			<src_port>497</src_port>
+			<dest_ip>135.148.121.246</dest_ip>
+			<dest_port>808</dest_port>
+			<signature_id>2028765</signature_id>
+			<signature>ET JA3 Hash - [Abuse.ch] Possible Dridex</signature>
+			<category>Unknown Traffic</category>
+			<severity>3</severity>
+		</event>
+		<event>
+			<timestamp>23/2/2022 - 19:32:13 UTC+0100</timestamp>
+			<event_type>alert</event_type>
+			<src_ip>172.16.0.170</src_ip>
+			<src_port>540</src_port>
+			<dest_ip>168.197.250.14</dest_ip>
+			<dest_port>80</dest_port>
+			<signature_id>2028765</signature_id>
+			<signature>ET JA3 Hash - [Abuse.ch] Possible Dridex</signature>
+			<category>Unknown Traffic</category>
+			<severity>3</severity>
+		</event>
+		<event>
+			<timestamp>23/2/2022 - 19:31:44 UTC+0100</timestamp>
+			<event_type>alert</event_type>
+			<src_ip>172.16.0.131</src_ip>
+			<src_port>492</src_port>
+			<dest_ip>104.21.89.147</dest_ip>
+			<dest_port>80</dest_port>
+			<signature_id>2031412</signature_id>
+			<signature>ET MALWARE FormBook CnC Checkin (GET)</signature>
+			<category>Malware Command and Control Activity Detected</category>
+			<severity>1</severity>
+		</event>
+		<event>
+			<timestamp>23/2/2022 - 19:32:53 UTC+0100</timestamp>
+			<event_type>alert</event_type>
+			<src_ip>172.16.0.170</src_ip>
+			<src_port>540</src_port>
+			<dest_ip>168.197.250.14</dest_ip>
+			<dest_port>80</dest_port>
+			<signature_id>2028765</signature_id>
+			<signature>ET JA3 Hash - [Abuse.ch] Possible Dridex</signature>
+			<category>Unknown Traffic</category>
+			<severity>3</severity>
+		</event>
+		<event>
+			<timestamp>23/2/2022 - 19:31:19 UTC+0100</timestamp>
+			<event_type>alert</event_type>
+			<src_ip>172.16.0.149</src_ip>
+			<src_port>497</src_port>
+			<dest_ip>135.148.121.246</dest_ip>
+			<dest_port>808</dest_port>
+			<signature_id>2028765</signature_id>
+			<signature>ET JA3 Hash - [Abuse.ch] Possible Dridex</signature>
+			<category>Unknown Traffic</category>
+			<severity>3</severity>
+		</event>
+		<event>
+			<timestamp>23/2/2022 - 19:37:54 UTC+0100</timestamp>
+			<event_type>alert</event_type>
+			<src_ip>172.16.0.149</src_ip>
+			<src_port>497</src_port>
+			<dest_ip>172.16.0.52</dest_ip>
+			<dest_port>139</dest_port>
+			<signature_id>2260002</signature_id>
+			<signature>SURICATA Applayer Detect protocol only one direction</signature>
+			<category>Generic Protocol Command Decode</category>
+			<severity>3</severity>
+		</event>
+		<event>
+			<timestamp>23/2/2022 - 19:32:2 UTC+0100</timestamp>
+			<event_type>alert</event_type>
+			<src_ip>172.16.0.131</src_ip>
+			<src_port>492</src_port>
+			<dest_ip>66.235.200.112</dest_ip>
+			<dest_port>80</dest_port>
+			<signature_id>2031412</signature_id>
+			<signature>ET MALWARE FormBook CnC Checkin (GET)</signature>
+			<category>Malware Command and Control Activity Detected</category>
+			<severity>1</severity>
+		</event>
+		<event>
+			<timestamp>23/2/2022 - 19:33:1 UTC+0100</timestamp>
+			<event_type>alert</event_type>
+			<src_ip>172.16.0.131</src_ip>
+			<src_port>492</src_port>
+			<dest_ip>23.227.38.74</dest_ip>
+			<dest_port>80</dest_port>
+			<signature_id>2031412</signature_id>
+			<signature>ET MALWARE FormBook CnC Checkin (GET)</signature>
+			<category>Malware Command and Control Activity Detected</category>
+			<severity>1</severity>
+		</event>
+		<event>
+			<timestamp>23/2/2022 - 19:33:17 UTC+0100</timestamp>
+			<event_type>alert</event_type>
+			<src_ip>172.16.0.131</src_ip>
+			<src_port>492</src_port>
+			<dest_ip>104.21.89.147</dest_ip>
+			<dest_port>80</dest_port>
+			<signature_id>2031412</signature_id>
+			<signature>ET MALWARE FormBook CnC Checkin (GET)</signature>
+			<category>Malware Command and Control Activity Detected</category>
+			<severity>1</severity>
+		</event>
+		<event>
+			<timestamp>23/2/2022 - 19:33:35 UTC+0100</timestamp>
+			<event_type>alert</event_type>
+			<src_ip>172.16.0.170</src_ip>
+			<src_port>541</src_port>
+			<dest_ip>180.250.21.2</dest_ip>
+			<dest_port>443</dest_port>
+			<signature_id>2028765</signature_id>
+			<signature>ET JA3 Hash - [Abuse.ch] Possible Dridex</signature>
+			<category>Unknown Traffic</category>
+			<severity>3</severity>
+		</event>
+		<event>
+			<timestamp>23/2/2022 - 19:32:58 UTC+0100</timestamp>
+			<event_type>alert</event_type>
+			<src_ip>172.16.0.149</src_ip>
+			<src_port>497</src_port>
+			<dest_ip>135.148.121.246</dest_ip>
+			<dest_port>808</dest_port>
+			<signature_id>2028765</signature_id>
+			<signature>ET JA3 Hash - [Abuse.ch] Possible Dridex</signature>
+			<category>Unknown Traffic</category>
+			<severity>3</severity>
+		</event>
+		<event>
+			<timestamp>23/2/2022 - 19:38:54 UTC+0100</timestamp>
+			<event_type>alert</event_type>
+			<src_ip>172.16.0.149</src_ip>
+			<src_port>497</src_port>
+			<dest_ip>172.16.0.52</dest_ip>
+			<dest_port>139</dest_port>
+			<signature_id>2260002</signature_id>
+			<signature>SURICATA Applayer Detect protocol only one direction</signature>
+			<category>Generic Protocol Command Decode</category>
+			<severity>3</severity>
+		</event>
+		<event>
+			<timestamp>23/2/2022 - 19:39:16 UTC+0100</timestamp>
+			<event_type>alert</event_type>
+			<src_ip>172.16.0.170</src_ip>
+			<src_port>541</src_port>
+			<dest_ip>59.148.253.194</dest_ip>
+			<dest_port>443</dest_port>
+			<signature_id>2028765</signature_id>
+			<signature>ET JA3 Hash - [Abuse.ch] Possible Dridex</signature>
+			<category>Unknown Traffic</category>
+			<severity>3</severity>
+		</event>
+		<event>
+			<timestamp>23/2/2022 - 19:39:24 UTC+0100</timestamp>
+			<event_type>alert</event_type>
+			<src_ip>172.16.0.149</src_ip>
+			<src_port>497</src_port>
+			<dest_ip>172.16.0.52</dest_ip>
+			<dest_port>139</dest_port>
+			<signature_id>2260002</signature_id>
+			<signature>SURICATA Applayer Detect protocol only one direction</signature>
+			<category>Generic Protocol Command Decode</category>
+			<severity>3</severity>
+		</event>
+		<event>
+			<timestamp>23/2/2022 - 19:34:29 UTC+0100</timestamp>
+			<event_type>alert</event_type>
+			<src_ip>172.16.0.131</src_ip>
+			<src_port>492</src_port>
+			<dest_ip>198.185.159.144</dest_ip>
+			<dest_port>80</dest_port>
+			<signature_id>2031412</signature_id>
+			<signature>ET MALWARE FormBook CnC Checkin (GET)</signature>
+			<category>Malware Command and Control Activity Detected</category>
+			<severity>1</severity>
+		</event>
+		<event>
+			<timestamp>23/2/2022 - 19:34:28 UTC+0100</timestamp>
+			<event_type>alert</event_type>
+			<src_ip>172.16.0.170</src_ip>
+			<src_port>541</src_port>
+			<dest_ip>168.197.250.14</dest_ip>
+			<dest_port>80</dest_port>
+			<signature_id>2028765</signature_id>
+			<signature>ET JA3 Hash - [Abuse.ch] Possible Dridex</signature>
+			<category>Unknown Traffic</category>
+			<severity>3</severity>
+		</event>
+		<event>
+			<timestamp>23/2/2022 - 19:41:42 UTC+0100</timestamp>
+			<event_type>alert</event_type>
+			<src_ip>172.16.0.170</src_ip>
+			<src_port>541</src_port>
+			<dest_ip>59.148.253.194</dest_ip>
+			<dest_port>443</dest_port>
+			<signature_id>2028765</signature_id>
+			<signature>ET JA3 Hash - [Abuse.ch] Possible Dridex</signature>
+			<category>Unknown Traffic</category>
+			<severity>3</severity>
+		</event>
+		<event>
+			<timestamp>23/2/2022 - 19:33:47 UTC+0100</timestamp>
+			<event_type>alert</event_type>
+			<src_ip>172.16.0.149</src_ip>
+			<src_port>497</src_port>
+			<dest_ip>135.148.121.246</dest_ip>
+			<dest_port>808</dest_port>
+			<signature_id>2028765</signature_id>
+			<signature>ET JA3 Hash - [Abuse.ch] Possible Dridex</signature>
+			<category>Unknown Traffic</category>
+			<severity>3</severity>
+		</event>
+		<event>
+			<timestamp>23/2/2022 - 19:35:32 UTC+0100</timestamp>
+			<event_type>alert</event_type>
+			<src_ip>172.16.0.170</src_ip>
+			<src_port>541</src_port>
+			<dest_ip>168.197.250.14</dest_ip>
+			<dest_port>80</dest_port>
+			<signature_id>2028765</signature_id>
+			<signature>ET JA3 Hash - [Abuse.ch] Possible Dridex</signature>
+			<category>Unknown Traffic</category>
+			<severity>3</severity>
+		</event>
+		<event>
+			<timestamp>23/2/2022 - 19:36:13 UTC+0100</timestamp>
+			<event_type>alert</event_type>
+			<src_ip>172.16.0.170</src_ip>
+			<src_port>541</src_port>
+			<dest_ip>59.148.253.194</dest_ip>
+			<dest_port>443</dest_port>
+			<signature_id>2028765</signature_id>
+			<signature>ET JA3 Hash - [Abuse.ch] Possible Dridex</signature>
+			<category>Unknown Traffic</category>
+			<severity>3</severity>
+		</event>
+		<event>
+			<timestamp>23/2/2022 - 19:37:57 UTC+0100</timestamp>
+			<event_type>alert</event_type>
+			<src_ip>172.16.0.170</src_ip>
+			<src_port>541</src_port>
+			<dest_ip>59.148.253.194</dest_ip>
+			<dest_port>443</dest_port>
+			<signature_id>2028765</signature_id>
+			<signature>ET JA3 Hash - [Abuse.ch] Possible Dridex</signature>
+			<category>Unknown Traffic</category>
+			<severity>3</severity>
+		</event>
+		<event>
+			<timestamp>23/2/2022 - 19:38:24 UTC+0100</timestamp>
+			<event_type>alert</event_type>
+			<src_ip>172.16.0.149</src_ip>
+			<src_port>497</src_port>
+			<dest_ip>172.16.0.52</dest_ip>
+			<dest_port>139</dest_port>
+			<signature_id>2260002</signature_id>
+			<signature>SURICATA Applayer Detect protocol only one direction</signature>
+			<category>Generic Protocol Command Decode</category>
+			<severity>3</severity>
+		</event>
+		<event>
+			<timestamp>23/2/2022 - 19:48:55 UTC+0100</timestamp>
+			<event_type>alert</event_type>
+			<src_ip>172.16.0.149</src_ip>
+			<src_port>498</src_port>
+			<dest_ip>135.148.121.246</dest_ip>
+			<dest_port>808</dest_port>
+			<signature_id>2028765</signature_id>
+			<signature>ET JA3 Hash - [Abuse.ch] Possible Dridex</signature>
+			<category>Unknown Traffic</category>
+			<severity>3</severity>
+		</event>
+		<event>
+			<timestamp>23/2/2022 - 19:37:33 UTC+0100</timestamp>
+			<event_type>alert</event_type>
+			<src_ip>172.16.0.170</src_ip>
+			<src_port>541</src_port>
+			<dest_ip>162.144.76.184</dest_ip>
+			<dest_port>808</dest_port>
+			<signature_id>2028765</signature_id>
+			<signature>ET JA3 Hash - [Abuse.ch] Possible Dridex</signature>
+			<category>Unknown Traffic</category>
+			<severity>3</severity>
+		</event>
+		<event>
+			<timestamp>23/2/2022 - 19:36:56 UTC+0100</timestamp>
+			<event_type>alert</event_type>
+			<src_ip>172.16.0.170</src_ip>
+			<src_port>541</src_port>
+			<dest_ip>59.148.253.194</dest_ip>
+			<dest_port>443</dest_port>
+			<signature_id>2028765</signature_id>
+			<signature>ET JA3 Hash - [Abuse.ch] Possible Dridex</signature>
+			<category>Unknown Traffic</category>
+			<severity>3</severity>
+		</event>
+		<event>
+			<timestamp>23/2/2022 - 19:37:24 UTC+0100</timestamp>
+			<event_type>alert</event_type>
+			<src_ip>172.16.0.149</src_ip>
+			<src_port>497</src_port>
+			<dest_ip>172.16.0.52</dest_ip>
+			<dest_port>139</dest_port>
+			<signature_id>2260002</signature_id>
+			<signature>SURICATA Applayer Detect protocol only one direction</signature>
+			<category>Generic Protocol Command Decode</category>
+			<severity>3</severity>
+		</event>
+		<event>
+			<timestamp>23/2/2022 - 19:38:41 UTC+0100</timestamp>
+			<event_type>alert</event_type>
+			<src_ip>172.16.0.170</src_ip>
+			<src_port>541</src_port>
+			<dest_ip>59.148.253.194</dest_ip>
+			<dest_port>443</dest_port>
+			<signature_id>2028765</signature_id>
+			<signature>ET JA3 Hash - [Abuse.ch] Possible Dridex</signature>
+			<category>Unknown Traffic</category>
+			<severity>3</severity>
+		</event>
+		<event>
+			<timestamp>23/2/2022 - 19:50:22 UTC+0100</timestamp>
+			<event_type>alert</event_type>
+			<src_ip>172.16.0.149</src_ip>
+			<src_port>498</src_port>
+			<dest_ip>135.148.121.246</dest_ip>
+			<dest_port>808</dest_port>
+			<signature_id>2028765</signature_id>
+			<signature>ET JA3 Hash - [Abuse.ch] Possible Dridex</signature>
+			<category>Unknown Traffic</category>
+			<severity>3</severity>
+		</event>
+		<event>
+			<timestamp>23/2/2022 - 19:51:10 UTC+0100</timestamp>
+			<event_type>alert</event_type>
+			<src_ip>172.16.0.149</src_ip>
+			<src_port>498</src_port>
+			<dest_ip>135.148.121.246</dest_ip>
+			<dest_port>808</dest_port>
+			<signature_id>2028765</signature_id>
+			<signature>ET JA3 Hash - [Abuse.ch] Possible Dridex</signature>
+			<category>Unknown Traffic</category>
+			<severity>3</severity>
+		</event>
+		<event>
+			<timestamp>23/2/2022 - 19:48:57 UTC+0100</timestamp>
+			<event_type>alert</event_type>
+			<src_ip>172.16.0.149</src_ip>
+			<src_port>498</src_port>
+			<dest_ip>135.148.121.246</dest_ip>
+			<dest_port>808</dest_port>
+			<signature_id>2028765</signature_id>
+			<signature>ET JA3 Hash - [Abuse.ch] Possible Dridex</signature>
+			<category>Unknown Traffic</category>
+			<severity>3</severity>
+		</event>
+		<event>
+			<timestamp>23/2/2022 - 19:48:59 UTC+0100</timestamp>
+			<event_type>alert</event_type>
+			<src_ip>172.16.0.149</src_ip>
+			<src_port>498</src_port>
+			<dest_ip>144.217.88.125</dest_ip>
+			<dest_port>443</dest_port>
+			<signature_id>2028765</signature_id>
+			<signature>ET JA3 Hash - [Abuse.ch] Possible Dridex</signature>
+			<category>Unknown Traffic</category>
+			<severity>3</severity>
+		</event>
+		<event>
+			<timestamp>23/2/2022 - 19:38:7 UTC+0100</timestamp>
+			<event_type>alert</event_type>
+			<src_ip>172.16.0.170</src_ip>
+			<src_port>541</src_port>
+			<dest_ip>128.199.93.156</dest_ip>
+			<dest_port>808</dest_port>
+			<signature_id>2028765</signature_id>
+			<signature>ET JA3 Hash - [Abuse.ch] Possible Dridex</signature>
+			<category>Unknown Traffic</category>
+			<severity>3</severity>
+		</event>
+		<event>
+			<timestamp>23/2/2022 - 19:57:25 UTC+0100</timestamp>
+			<event_type>alert</event_type>
+			<src_ip>172.16.0.170</src_ip>
+			<src_port>541</src_port>
+			<dest_ip>59.148.253.194</dest_ip>
+			<dest_port>443</dest_port>
+			<signature_id>2028765</signature_id>
+			<signature>ET JA3 Hash - [Abuse.ch] Possible Dridex</signature>
+			<category>Unknown Traffic</category>
+			<severity>3</severity>
+		</event>
+		<event>
+			<timestamp>23/2/2022 - 19:39:23 UTC+0100</timestamp>
+			<event_type>alert</event_type>
+			<src_ip>172.16.0.170</src_ip>
+			<src_port>541</src_port>
+			<dest_ip>59.148.253.194</dest_ip>
+			<dest_port>443</dest_port>
+			<signature_id>2028765</signature_id>
+			<signature>ET JA3 Hash - [Abuse.ch] Possible Dridex</signature>
+			<category>Unknown Traffic</category>
+			<severity>3</severity>
+		</event>
+		<event>
+			<timestamp>23/2/2022 - 19:40:6 UTC+0100</timestamp>
+			<event_type>alert</event_type>
+			<src_ip>172.16.0.170</src_ip>
+			<src_port>541</src_port>
+			<dest_ip>59.148.253.194</dest_ip>
+			<dest_port>443</dest_port>
+			<signature_id>2028765</signature_id>
+			<signature>ET JA3 Hash - [Abuse.ch] Possible Dridex</signature>
+			<category>Unknown Traffic</category>
+			<severity>3</severity>
+		</event>
+		<event>
+			<timestamp>23/2/2022 - 19:40:42 UTC+0100</timestamp>
+			<event_type>alert</event_type>
+			<src_ip>172.16.0.170</src_ip>
+			<src_port>541</src_port>
+			<dest_ip>59.148.253.194</dest_ip>
+			<dest_port>443</dest_port>
+			<signature_id>2028765</signature_id>
+			<signature>ET JA3 Hash - [Abuse.ch] Possible Dridex</signature>
+			<category>Unknown Traffic</category>
+			<severity>3</severity>
+		</event>
+		<event>
+			<timestamp>23/2/2022 - 19:49:47 UTC+0100</timestamp>
+			<event_type>alert</event_type>
+			<src_ip>172.16.0.149</src_ip>
+			<src_port>498</src_port>
+			<dest_ip>135.148.121.246</dest_ip>
+			<dest_port>808</dest_port>
+			<signature_id>2028765</signature_id>
+			<signature>ET JA3 Hash - [Abuse.ch] Possible Dridex</signature>
+			<category>Unknown Traffic</category>
+			<severity>3</severity>
+		</event>
+		<event>
+			<timestamp>23/2/2022 - 19:50:20 UTC+0100</timestamp>
+			<event_type>alert</event_type>
+			<src_ip>172.16.0.149</src_ip>
+			<src_port>498</src_port>
+			<dest_ip>135.148.121.246</dest_ip>
+			<dest_port>808</dest_port>
+			<signature_id>2028765</signature_id>
+			<signature>ET JA3 Hash - [Abuse.ch] Possible Dridex</signature>
+			<category>Unknown Traffic</category>
+			<severity>3</severity>
+		</event>
+		<event>
+			<timestamp>23/2/2022 - 19:58:24 UTC+0100</timestamp>
+			<event_type>alert</event_type>
+			<src_ip>172.16.0.170</src_ip>
+			<src_port>541</src_port>
+			<dest_ip>139.196.72.155</dest_ip>
+			<dest_port>808</dest_port>
+			<signature_id>2028765</signature_id>
+			<signature>ET JA3 Hash - [Abuse.ch] Possible Dridex</signature>
+			<category>Unknown Traffic</category>
+			<severity>3</severity>
+		</event>
+		<event>
+			<timestamp>23/2/2022 - 19:59:25 UTC+0100</timestamp>
+			<event_type>alert</event_type>
+			<src_ip>172.16.0.170</src_ip>
+			<src_port>541</src_port>
+			<dest_ip>139.196.72.155</dest_ip>
+			<dest_port>808</dest_port>
+			<signature_id>2028765</signature_id>
+			<signature>ET JA3 Hash - [Abuse.ch] Possible Dridex</signature>
+			<category>Unknown Traffic</category>
+			<severity>3</severity>
+		</event>
+		<event>
+			<timestamp>23/2/2022 - 20:6:8 UTC+0100</timestamp>
+			<event_type>alert</event_type>
+			<src_ip>172.16.0.170</src_ip>
+			<src_port>541</src_port>
+			<dest_ip>128.199.192.135</dest_ip>
+			<dest_port>808</dest_port>
+			<signature_id>2028765</signature_id>
+			<signature>ET JA3 Hash - [Abuse.ch] Possible Dridex</signature>
+			<category>Unknown Traffic</category>
+			<severity>3</severity>
+		</event>
+		<event>
+			<timestamp>23/2/2022 - 20:6:49 UTC+0100</timestamp>
+			<event_type>alert</event_type>
+			<src_ip>172.16.0.149</src_ip>
+			<src_port>498</src_port>
+			<dest_ip>135.148.121.246</dest_ip>
+			<dest_port>808</dest_port>
+			<signature_id>2028765</signature_id>
+			<signature>ET JA3 Hash - [Abuse.ch] Possible Dridex</signature>
+			<category>Unknown Traffic</category>
+			<severity>3</severity>
+		</event>
+		<event>
+			<timestamp>23/2/2022 - 19:58:37 UTC+0100</timestamp>
+			<event_type>alert</event_type>
+			<src_ip>172.16.0.170</src_ip>
+			<src_port>541</src_port>
+			<dest_ip>139.196.72.155</dest_ip>
+			<dest_port>808</dest_port>
+			<signature_id>2028765</signature_id>
+			<signature>ET JA3 Hash - [Abuse.ch] Possible Dridex</signature>
+			<category>Unknown Traffic</category>
+			<severity>3</severity>
+		</event>
+		<event>
+			<timestamp>23/2/2022 - 20:0:29 UTC+0100</timestamp>
+			<event_type>alert</event_type>
+			<src_ip>172.16.0.170</src_ip>
+			<src_port>541</src_port>
+			<dest_ip>54.38.242.185</dest_ip>
+			<dest_port>443</dest_port>
+			<signature_id>2028765</signature_id>
+			<signature>ET JA3 Hash - [Abuse.ch] Possible Dridex</signature>
+			<category>Unknown Traffic</category>
+			<severity>3</severity>
+		</event>
+		<event>
+			<timestamp>23/2/2022 - 20:0:29 UTC+0100</timestamp>
+			<event_type>alert</event_type>
+			<src_ip>54.38.242.185</src_ip>
+			<src_port>443</src_port>
+			<dest_ip>172.16.0.170</dest_ip>
+			<dest_port>541</dest_port>
+			<signature_id>2013659</signature_id>
+			<signature>ET POLICY Self Signed SSL Certificate (SomeOrganizationalUnit)</signature>
+			<category>Potential Corporate Privacy Violation</category>
+			<severity>1</severity>
+		</event>
+		<event>
+			<timestamp>23/2/2022 - 20:0:30 UTC+0100</timestamp>
+			<event_type>alert</event_type>
+			<src_ip>172.16.0.170</src_ip>
+			<src_port>541</src_port>
+			<dest_ip>185.184.25.78</dest_ip>
+			<dest_port>808</dest_port>
+			<signature_id>2028765</signature_id>
+			<signature>ET JA3 Hash - [Abuse.ch] Possible Dridex</signature>
+			<category>Unknown Traffic</category>
+			<severity>3</severity>
+		</event>
+		<event>
+			<timestamp>23/2/2022 - 20:3:19 UTC+0100</timestamp>
+			<event_type>alert</event_type>
+			<src_ip>172.16.0.170</src_ip>
+			<src_port>541</src_port>
+			<dest_ip>198.199.98.78</dest_ip>
+			<dest_port>808</dest_port>
+			<signature_id>2028765</signature_id>
+			<signature>ET JA3 Hash - [Abuse.ch] Possible Dridex</signature>
+			<category>Unknown Traffic</category>
+			<severity>3</severity>
+		</event>
+		<event>
+			<timestamp>23/2/2022 - 20:6:55 UTC+0100</timestamp>
+			<event_type>alert</event_type>
+			<src_ip>172.16.0.149</src_ip>
+			<src_port>498</src_port>
+			<dest_ip>135.148.121.246</dest_ip>
+			<dest_port>808</dest_port>
+			<signature_id>2028765</signature_id>
+			<signature>ET JA3 Hash - [Abuse.ch] Possible Dridex</signature>
+			<category>Unknown Traffic</category>
+			<severity>3</severity>
+		</event>
+		<event>
+			<timestamp>23/2/2022 - 20:7:1 UTC+0100</timestamp>
+			<event_type>alert</event_type>
+			<src_ip>74.208.5.15</src_ip>
+			<src_port>587</src_port>
+			<dest_ip>172.16.0.149</dest_ip>
+			<dest_port>498</dest_port>
+			<signature_id>2260002</signature_id>
+			<signature>SURICATA Applayer Detect protocol only one direction</signature>
+			<category>Generic Protocol Command Decode</category>
+			<severity>3</severity>
+		</event>
+		<event>
+			<timestamp>23/2/2022 - 20:7:2 UTC+0100</timestamp>
+			<event_type>alert</event_type>
+			<src_ip>94.177.209.30</src_ip>
+			<src_port>25</src_port>
+			<dest_ip>172.16.0.149</dest_ip>
+			<dest_port>498</dest_port>
+			<signature_id>2260002</signature_id>
+			<signature>SURICATA Applayer Detect protocol only one direction</signature>
+			<category>Generic Protocol Command Decode</category>
+			<severity>3</severity>
+		</event>
+		<event>
+			<timestamp>23/2/2022 - 20:7:3 UTC+0100</timestamp>
+			<event_type>alert</event_type>
+			<src_ip>74.208.5.15</src_ip>
+			<src_port>587</src_port>
+			<dest_ip>172.16.0.149</dest_ip>
+			<dest_port>498</dest_port>
+			<signature_id>2260002</signature_id>
+			<signature>SURICATA Applayer Detect protocol only one direction</signature>
+			<category>Generic Protocol Command Decode</category>
+			<severity>3</severity>
+		</event>
+		<event>
+			<timestamp>23/2/2022 - 20:7:2 UTC+0100</timestamp>
+			<event_type>alert</event_type>
+			<src_ip>210.131.2.36</src_ip>
+			<src_port>25</src_port>
+			<dest_ip>172.16.0.149</dest_ip>
+			<dest_port>498</dest_port>
+			<signature_id>2260002</signature_id>
+			<signature>SURICATA Applayer Detect protocol only one direction</signature>
+			<category>Generic Protocol Command Decode</category>
+			<severity>3</severity>
+		</event>
+		<event>
+			<timestamp>23/2/2022 - 20:7:3 UTC+0100</timestamp>
+			<event_type>alert</event_type>
+			<src_ip>142.250.138.109</src_ip>
+			<src_port>25</src_port>
+			<dest_ip>172.16.0.149</dest_ip>
+			<dest_port>498</dest_port>
+			<signature_id>2260002</signature_id>
+			<signature>SURICATA Applayer Detect protocol only one direction</signature>
+			<category>Generic Protocol Command Decode</category>
+			<severity>3</severity>
+		</event>
+		<event>
+			<timestamp>23/2/2022 - 20:2:43 UTC+0100</timestamp>
+			<event_type>alert</event_type>
+			<src_ip>172.16.0.170</src_ip>
+			<src_port>541</src_port>
+			<dest_ip>54.37.106.167</dest_ip>
+			<dest_port>808</dest_port>
+			<signature_id>2028765</signature_id>
+			<signature>ET JA3 Hash - [Abuse.ch] Possible Dridex</signature>
+			<category>Unknown Traffic</category>
+			<severity>3</severity>
+		</event>
+		<event>
+			<timestamp>23/2/2022 - 20:6:52 UTC+0100</timestamp>
+			<event_type>alert</event_type>
+			<src_ip>172.16.0.149</src_ip>
+			<src_port>498</src_port>
+			<dest_ip>135.148.121.246</dest_ip>
+			<dest_port>808</dest_port>
+			<signature_id>2028765</signature_id>
+			<signature>ET JA3 Hash - [Abuse.ch] Possible Dridex</signature>
+			<category>Unknown Traffic</category>
+			<severity>3</severity>
+		</event>
+		<event>
+			<timestamp>23/2/2022 - 20:4:55 UTC+0100</timestamp>
+			<event_type>alert</event_type>
+			<src_ip>172.16.0.170</src_ip>
+			<src_port>541</src_port>
+			<dest_ip>61.7.231.226</dest_ip>
+			<dest_port>443</dest_port>
+			<signature_id>2028765</signature_id>
+			<signature>ET JA3 Hash - [Abuse.ch] Possible Dridex</signature>
+			<category>Unknown Traffic</category>
+			<severity>3</severity>
+		</event>
+		<event>
+			<timestamp>23/2/2022 - 20:6:55 UTC+0100</timestamp>
+			<event_type>alert</event_type>
+			<src_ip>172.16.0.149</src_ip>
+			<src_port>498</src_port>
+			<dest_ip>134.209.156.68</dest_ip>
+			<dest_port>443</dest_port>
+			<signature_id>2028765</signature_id>
+			<signature>ET JA3 Hash - [Abuse.ch] Possible Dridex</signature>
+			<category>Unknown Traffic</category>
+			<severity>3</severity>
+		</event>
+		<event>
+			<timestamp>23/2/2022 - 20:7:2 UTC+0100</timestamp>
+			<event_type>alert</event_type>
+			<src_ip>116.254.112.253</src_ip>
+			<src_port>25</src_port>
+			<dest_ip>172.16.0.149</dest_ip>
+			<dest_port>498</dest_port>
+			<signature_id>2260002</signature_id>
+			<signature>SURICATA Applayer Detect protocol only one direction</signature>
+			<category>Generic Protocol Command Decode</category>
+			<severity>3</severity>
+		</event>
+		<event>
+			<timestamp>23/2/2022 - 20:7:3 UTC+0100</timestamp>
+			<event_type>alert</event_type>
+			<src_ip>40.97.120.162</src_ip>
+			<src_port>587</src_port>
+			<dest_ip>172.16.0.149</dest_ip>
+			<dest_port>498</dest_port>
+			<signature_id>2260002</signature_id>
+			<signature>SURICATA Applayer Detect protocol only one direction</signature>
+			<category>Generic Protocol Command Decode</category>
+			<severity>3</severity>
+		</event>
+		<event>
+			<timestamp>23/2/2022 - 20:7:3 UTC+0100</timestamp>
+			<event_type>alert</event_type>
+			<src_ip>122.17.147.238</src_ip>
+			<src_port>25</src_port>
+			<dest_ip>172.16.0.149</dest_ip>
+			<dest_port>498</dest_port>
+			<signature_id>2260002</signature_id>
+			<signature>SURICATA Applayer Detect protocol only one direction</signature>
+			<category>Generic Protocol Command Decode</category>
+			<severity>3</severity>
+		</event>
+		<event>
+			<timestamp>23/2/2022 - 20:7:4 UTC+0100</timestamp>
+			<event_type>alert</event_type>
+			<src_ip>192.185.4.31</src_ip>
+			<src_port>587</src_port>
+			<dest_ip>172.16.0.149</dest_ip>
+			<dest_port>498</dest_port>
+			<signature_id>2260002</signature_id>
+			<signature>SURICATA Applayer Detect protocol only one direction</signature>
+			<category>Generic Protocol Command Decode</category>
+			<severity>3</severity>
+		</event>
+		<event>
+			<timestamp>23/2/2022 - 20:6:58 UTC+0100</timestamp>
+			<event_type>alert</event_type>
+			<src_ip>172.16.0.149</src_ip>
+			<src_port>498</src_port>
+			<dest_ip>134.209.156.68</dest_ip>
+			<dest_port>443</dest_port>
+			<signature_id>2028765</signature_id>
+			<signature>ET JA3 Hash - [Abuse.ch] Possible Dridex</signature>
+			<category>Unknown Traffic</category>
+			<severity>3</severity>
+		</event>
+		<event>
+			<timestamp>23/2/2022 - 20:7:3 UTC+0100</timestamp>
+			<event_type>alert</event_type>
+			<src_ip>27.34.147.95</src_ip>
+			<src_port>587</src_port>
+			<dest_ip>172.16.0.149</dest_ip>
+			<dest_port>498</dest_port>
+			<signature_id>2260002</signature_id>
+			<signature>SURICATA Applayer Detect protocol only one direction</signature>
+			<category>Generic Protocol Command Decode</category>
+			<severity>3</severity>
+		</event>
+		<event>
+			<timestamp>23/2/2022 - 19:22:24 UTC+0100</timestamp>
+			<event_type>alert</event_type>
+			<src_ip>172.16.0.131</src_ip>
+			<src_port>492</src_port>
+			<dest_ip>3.130.253.23</dest_ip>
+			<dest_port>80</dest_port>
+			<signature_id>2031412</signature_id>
+			<signature>ET MALWARE FormBook CnC Checkin (GET)</signature>
+			<category>Malware Command and Control Activity Detected</category>
+			<severity>1</severity>
+		</event>
+		<event>
+			<timestamp>23/2/2022 - 19:22:24 UTC+0100</timestamp>
+			<event_type>alert</event_type>
+			<src_ip>172.16.0.131</src_ip>
+			<src_port>492</src_port>
+			<dest_ip>213.186.33.5</dest_ip>
+			<dest_port>80</dest_port>
+			<signature_id>2031412</signature_id>
+			<signature>ET MALWARE FormBook CnC Checkin (GET)</signature>
+			<category>Malware Command and Control Activity Detected</category>
+			<severity>1</severity>
+		</event>
+		<event>
+			<timestamp>23/2/2022 - 19:22:24 UTC+0100</timestamp>
+			<event_type>alert</event_type>
+			<src_ip>172.16.0.131</src_ip>
+			<src_port>492</src_port>
+			<dest_ip>66.29.145.216</dest_ip>
+			<dest_port>80</dest_port>
+			<signature_id>2031412</signature_id>
+			<signature>ET MALWARE FormBook CnC Checkin (GET)</signature>
+			<category>Malware Command and Control Activity Detected</category>
+			<severity>1</severity>
+		</event>
+		<event>
+			<timestamp>23/2/2022 - 19:22:24 UTC+0100</timestamp>
+			<event_type>alert</event_type>
+			<src_ip>172.16.0.131</src_ip>
+			<src_port>492</src_port>
+			<dest_ip>184.168.99.26</dest_ip>
+			<dest_port>80</dest_port>
+			<signature_id>2031412</signature_id>
+			<signature>ET MALWARE FormBook CnC Checkin (GET)</signature>
+			<category>Malware Command and Control Activity Detected</category>
+			<severity>1</severity>
+		</event>
+		<event>
+			<timestamp>23/2/2022 - 19:22:24 UTC+0100</timestamp>
+			<event_type>alert</event_type>
+			<src_ip>172.16.0.131</src_ip>
+			<src_port>492</src_port>
+			<dest_ip>213.186.33.5</dest_ip>
+			<dest_port>80</dest_port>
+			<signature_id>2031412</signature_id>
+			<signature>ET MALWARE FormBook CnC Checkin (GET)</signature>
+			<category>Malware Command and Control Activity Detected</category>
+			<severity>1</severity>
+		</event>
+		<event>
+			<timestamp>23/2/2022 - 19:22:24 UTC+0100</timestamp>
+			<event_type>alert</event_type>
+			<src_ip>172.16.0.131</src_ip>
+			<src_port>492</src_port>
+			<dest_ip>72.167.191.69</dest_ip>
+			<dest_port>80</dest_port>
+			<signature_id>2031412</signature_id>
+			<signature>ET MALWARE FormBook CnC Checkin (GET)</signature>
+			<category>Malware Command and Control Activity Detected</category>
+			<severity>1</severity>
+		</event>
+		<event>
+			<timestamp>23/2/2022 - 19:22:24 UTC+0100</timestamp>
+			<event_type>alert</event_type>
+			<src_ip>172.16.0.131</src_ip>
+			<src_port>492</src_port>
+			<dest_ip>209.17.116.163</dest_ip>
+			<dest_port>80</dest_port>
+			<signature_id>2031412</signature_id>
+			<signature>ET MALWARE FormBook CnC Checkin (GET)</signature>
+			<category>Malware Command and Control Activity Detected</category>
+			<severity>1</severity>
+		</event>
+		<event>
+			<timestamp>23/2/2022 - 19:22:24 UTC+0100</timestamp>
+			<event_type>alert</event_type>
+			<src_ip>172.16.0.131</src_ip>
+			<src_port>492</src_port>
+			<dest_ip>216.58.193.147</dest_ip>
+			<dest_port>80</dest_port>
+			<signature_id>2031412</signature_id>
+			<signature>ET MALWARE FormBook CnC Checkin (GET)</signature>
+			<category>Malware Command and Control Activity Detected</category>
+			<severity>1</severity>
+		</event>
+		<event>
+			<timestamp>23/2/2022 - 19:22:24 UTC+0100</timestamp>
+			<event_type>alert</event_type>
+			<src_ip>172.16.0.131</src_ip>
+			<src_port>492</src_port>
+			<dest_ip>216.172.184.77</dest_ip>
+			<dest_port>80</dest_port>
+			<signature_id>2031412</signature_id>
+			<signature>ET MALWARE FormBook CnC Checkin (GET)</signature>
+			<category>Malware Command and Control Activity Detected</category>
+			<severity>1</severity>
+		</event>
+		<event>
+			<timestamp>23/2/2022 - 19:22:24 UTC+0100</timestamp>
+			<event_type>alert</event_type>
+			<src_ip>172.16.0.131</src_ip>
+			<src_port>492</src_port>
+			<dest_ip>213.186.33.5</dest_ip>
+			<dest_port>80</dest_port>
+			<signature_id>2031412</signature_id>
+			<signature>ET MALWARE FormBook CnC Checkin (GET)</signature>
+			<category>Malware Command and Control Activity Detected</category>
+			<severity>1</severity>
+		</event>
+		<event>
+			<timestamp>23/2/2022 - 19:22:24 UTC+0100</timestamp>
+			<event_type>alert</event_type>
+			<src_ip>172.16.0.131</src_ip>
+			<src_port>492</src_port>
+			<dest_ip>198.54.117.215</dest_ip>
+			<dest_port>80</dest_port>
+			<signature_id>2031412</signature_id>
+			<signature>ET MALWARE FormBook CnC Checkin (GET)</signature>
+			<category>Malware Command and Control Activity Detected</category>
+			<severity>1</severity>
+		</event>
+		<event>
+			<timestamp>23/2/2022 - 19:22:24 UTC+0100</timestamp>
+			<event_type>alert</event_type>
+			<src_ip>172.16.0.131</src_ip>
+			<src_port>492</src_port>
+			<dest_ip>216.58.193.147</dest_ip>
+			<dest_port>80</dest_port>
+			<signature_id>2031412</signature_id>
+			<signature>ET MALWARE FormBook CnC Checkin (GET)</signature>
+			<category>Malware Command and Control Activity Detected</category>
+			<severity>1</severity>
+		</event>
+		<event>
+			<timestamp>23/2/2022 - 19:22:24 UTC+0100</timestamp>
+			<event_type>alert</event_type>
+			<src_ip>172.16.0.131</src_ip>
+			<src_port>492</src_port>
+			<dest_ip>154.206.65.249</dest_ip>
+			<dest_port>80</dest_port>
+			<signature_id>2031412</signature_id>
+			<signature>ET MALWARE FormBook CnC Checkin (GET)</signature>
+			<category>Malware Command and Control Activity Detected</category>
+			<severity>1</severity>
+		</event>
+		<event>
+			<timestamp>23/2/2022 - 19:22:24 UTC+0100</timestamp>
+			<event_type>alert</event_type>
+			<src_ip>172.16.0.131</src_ip>
+			<src_port>492</src_port>
+			<dest_ip>104.16.12.194</dest_ip>
+			<dest_port>80</dest_port>
+			<signature_id>2031412</signature_id>
+			<signature>ET MALWARE FormBook CnC Checkin (GET)</signature>
+			<category>Malware Command and Control Activity Detected</category>
+			<severity>1</severity>
+		</event>
+		<event>
+			<timestamp>23/2/2022 - 19:22:24 UTC+0100</timestamp>
+			<event_type>alert</event_type>
+			<src_ip>172.16.0.131</src_ip>
+			<src_port>492</src_port>
+			<dest_ip>198.54.117.210</dest_ip>
+			<dest_port>80</dest_port>
+			<signature_id>2031412</signature_id>
+			<signature>ET MALWARE FormBook CnC Checkin (GET)</signature>
+			<category>Malware Command and Control Activity Detected</category>
+			<severity>1</severity>
+		</event>
+		<event>
+			<timestamp>23/2/2022 - 19:22:24 UTC+0100</timestamp>
+			<event_type>alert</event_type>
+			<src_ip>172.16.0.131</src_ip>
+			<src_port>492</src_port>
+			<dest_ip>154.206.65.249</dest_ip>
+			<dest_port>80</dest_port>
+			<signature_id>2031412</signature_id>
+			<signature>ET MALWARE FormBook CnC Checkin (GET)</signature>
+			<category>Malware Command and Control Activity Detected</category>
+			<severity>1</severity>
+		</event>
+		<event>
+			<timestamp>23/2/2022 - 19:22:24 UTC+0100</timestamp>
+			<event_type>alert</event_type>
+			<src_ip>172.16.0.131</src_ip>
+			<src_port>492</src_port>
+			<dest_ip>216.58.193.147</dest_ip>
+			<dest_port>80</dest_port>
+			<signature_id>2031412</signature_id>
+			<signature>ET MALWARE FormBook CnC Checkin (GET)</signature>
+			<category>Malware Command and Control Activity Detected</category>
+			<severity>1</severity>
+		</event>
+	</events>
+</suricata>
+
